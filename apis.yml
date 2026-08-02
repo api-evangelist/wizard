@@ -1,7 +1,25 @@
 aid: wizard
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/wizard.png
 name: Wizard
-description: 'Wizard is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Wizard is an AI-powered personal shopping agent for consumers. Shoppers
+  describe what they want in natural language and Wizard searches across retailer websites,
+  customer reviews, trusted editorial, and social content to return a tightly curated
+  set of product recommendations, with direct checkout from retailers such as Amazon,
+  Best Buy, Apple, and Target. The company is backed by Accel. As of this enrichment
+  pass Wizard is a consumer-facing web/app product and exposes no public developer
+  API, SDK, documentation, or well-known discovery surface (developer/docs/api subdomains
+  and /.well-known/security.txt all return 404).'
 url: https://raw.githubusercontent.com/api-evangelist/wizard/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Shopping
+- E-Commerce
+- Artificial Intelligence
+- Shopping Assistant
+- Conversational Commerce
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +45,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/wizard-domain-security.yml
 - type: Website
   url: https://wizard.com/
+- type: SignUp
+  url: https://app.wizard.com/beta
+- type: TermsOfService
+  url: https://wizard.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://wizard.com/privacy-notice
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
