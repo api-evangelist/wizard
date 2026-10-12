@@ -1,0 +1,46 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://zapier.com/apps/wizard/integrations
+- https://n8n.io/integrations/wizard/
+- https://composio.dev/toolkits/wizard
+- https://monid.ai/tools/wizard
+checked:
+- https://composio.dev/toolkits/wizard
+- https://monid.ai/tools/wizard
+- https://n8n.io/integrations/wizard/
+- https://zapier.com/apps/wizard/integrations
+summary: null
+marketplace_apps: []
+edges:
+- partner_name: zoho
+  partner: zoho
+  partner_match: domain
+  type: contract
+  channel: partner-built
+  relationship: processor-connection
+  direction: partner-built
+  evidence: https://github.com/api-evangelist/zoho/blob/main/openapi/zoho-timeline-api-openapi.yml
+  contract_reference:
+    repo: zoho
+    spec_file: zoho-timeline-api-openapi.yml
+    value: wizard
+    property: __timeline.source
+    detected_by: detect-payment-method-edges.py
+    detected: '2026-10-12'
+- partner_name: zoho-crm
+  partner: zoho-crm
+  partner_match: domain
+  type: contract
+  channel: partner-built
+  relationship: processor-connection
+  direction: partner-built
+  evidence: https://github.com/api-evangelist/zoho-crm/blob/main/openapi/zoho-crm-timeline-api-openapi.yml
+  contract_reference:
+    repo: zoho-crm
+    spec_file: zoho-crm-timeline-api-openapi.yml
+    value: wizard
+    property: __timeline.source
+    detected_by: detect-payment-method-edges.py
+    detected: '2026-10-12'
+templates: []
